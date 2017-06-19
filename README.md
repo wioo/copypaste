@@ -1,6 +1,9 @@
 # copypaste
 
 It copies file content or input text to primary buffer or X clipboard.
+
+Dependencies: xclip
+
 ```
 copypaste [-f, -t] filename or text [-p, -x]
   
