@@ -41,7 +41,7 @@ if [ "$OPTION" = "-f" ]; then
 		echo "Must use existing file or -t option"
 		exit 1
 	fi
-if [ "$#" -gt "2" ]; then # Check if there is second argument
+if [ "$#" -gt "2" ]; then # Check if there is second option
 if [ "$BUFFER" = "-p" ]; then # Check if second argument is -p
 	 cat "$ARGUMENT" | xclip -selection "primary"
 	 exit 0
@@ -52,6 +52,7 @@ if [ "$BUFFER" = "-p" ]; then # Check if second argument is -p
 	echo "
 	wrong argument"
 	echo "$USAGE"
+	exit 1
 fi	
 
 else
